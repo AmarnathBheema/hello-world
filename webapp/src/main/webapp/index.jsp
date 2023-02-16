@@ -9,9 +9,6 @@
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="pswd" id="pswd" required>
     
     <label for="loc"><b>Password</b></label>
     <input type="location" placeholder="Enter Location" name="location" id="location" required>
