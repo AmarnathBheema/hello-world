@@ -1,7 +1,7 @@
 pipeline
 
 agent any
-def mvnHome = tool name: "my-mvn"
+def mvnHome=tool name: "my-mvn"
 
 stages{
  stage('git checkout'){
