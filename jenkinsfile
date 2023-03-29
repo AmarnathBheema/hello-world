@@ -1,7 +1,11 @@
-pipeline
+pipeline{
 
 agent any
-def mvnHome=tool name: "my-mvn"
+
+tools{
+maven 'my-mvn'
+
+}
 
 stages{
  stage('git checkout'){
@@ -11,7 +15,7 @@ stages{
  }
  stage('build'){
   steps{
-  sh "${mvnHome}/bin clean package"
+  sh "mvn clean package"
   }
  }
  }
