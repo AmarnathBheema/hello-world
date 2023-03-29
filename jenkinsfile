@@ -14,5 +14,4 @@ stages{
   sh "${mvnHome}/bin clean package"
   }
  }
-  
- 
+ }
