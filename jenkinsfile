@@ -2,8 +2,8 @@ node
 def mvnHome = tool name: my-mvn
 {
 
-stage('checkout scm')
-{
-git 'https://github.com/AmarnathBheema/hello-world.git'
-}
+ stage('checkout scm')
+ {
+ git 'https://github.com/AmarnathBheema/hello-world.git'
+ }
 }
