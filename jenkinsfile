@@ -1,6 +1,18 @@
-node
+pipeline
+
+agent any
 def mvnHome = tool name: my-mvn
 
- stage('checkout scm'){
- git 'https://github.com/AmarnathBheema/hello-world.git'
+stages{
+ stage('git checkout'){
+  steps{
+  git 'https://github.com/AmarnathBheema/hello-world.git'
+  }
  }
+ stage('build'){
+  steps{
+  sh "${mvnHome}/bin clean package"
+  }
+ }
+  
+ 
