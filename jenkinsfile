@@ -31,5 +31,7 @@ stages{
    sh "tar -xvf apache-tomcat-8.5.87.tar.gz"
    sh "cd apache-tomcat-8.5.87"
    sh "./bin/startup.sh"
+   }
+  }
  }
 }
