@@ -4,7 +4,3 @@ stage ('checkout scm')
 {
 git 'https://github.com/AmarnathBheema/hello-world.git'
 }
-stage ('maven build')
-{
-sh '${mvnHome}/bin package'
-}
